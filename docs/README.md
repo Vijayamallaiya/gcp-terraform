@@ -8,6 +8,12 @@ The infrastructure is fully automated and follows security best practices such a
 
 The solution emphasizes security, automation, and reproducibility.
 
+## Requirements
+
+- Terraform >= 1.x
+- Google Cloud SDK (gcloud)
+- GCP project with billing enabled
+
 ---
 
 ## Architecture
