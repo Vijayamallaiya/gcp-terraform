@@ -126,23 +126,23 @@ Screenshots included:
 
 * Terraform apply output
 
-![Terraform Apply](docs/screenshots/terraform-apply.png)
+![Terraform Apply](screenshots/terraform-apply.png)
 
 * WordPress running in browser
 
-![WordPress](docs/screenshots/wordpress.png)
+![WordPress](screenshots/wordpress.png)
 
 * IAP-based SSH access
 
-![IAP SSH](docs/screenshots/iap-ssh.png)
+![IAP SSH](screenshots/iap-ssh.png)
 
 * Failed direct SSH attempt
 
-![SSH Failure](docs/screenshots/direct-ssh-fail.png)
+![SSH Failure](screenshots/direct-ssh-fail.png)
 
 * Login audit logs
 
-![Audit Logs](docs/screenshots/audit-logs.png)
+![Audit Logs](screenshots/audit-logs.png)
 
 ---
 
