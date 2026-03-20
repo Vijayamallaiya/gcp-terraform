@@ -18,7 +18,7 @@ The solution emphasizes security, automation, and reproducibility.
 
 ## Architecture
 
-## Architecture Diagram
+### Architecture Diagram
 
 ![Architecture](screenshots/architecture.png)
 
@@ -153,6 +153,8 @@ Screenshots included:
 * Login audit logs
 
 ![Audit Logs](screenshots/audit-logs.png)
+
+All screenshots were captured after a fresh Terraform apply to validate full automation.
 
 ---
 
