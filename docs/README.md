@@ -12,6 +12,10 @@ The solution emphasizes security, automation, and reproducibility.
 
 ## Architecture
 
+## Architecture Diagram
+
+![Architecture](screenshots/architecture.png)
+
 The infrastructure is divided into reusable Terraform modules:
 
 * **network**: Creates a custom VPC and subnet (no default network used)
