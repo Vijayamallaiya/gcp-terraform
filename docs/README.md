@@ -6,6 +6,8 @@ This project provisions a secure WordPress deployment on Google Cloud Platform u
 
 The infrastructure is fully automated and follows security best practices such as IAP-based SSH access, least privilege IAM, and login auditing.
 
+The solution emphasizes security, automation, and reproducibility.
+
 ---
 
 ## Architecture
@@ -22,7 +24,7 @@ The infrastructure is divided into reusable Terraform modules:
 ## Repository Structure
 
 ```
-project-root/
+gcp-terraform/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
@@ -56,7 +58,7 @@ project-root/
   Rules are applied using instance tags rather than broadly across the network.
 
 * **Least privilege service account**:
-  A custom service account is used with minimal required permissions.
+  A custom service account is used with minimal required IAM roles following the principle of least privilege.
 
 * **No hardcoded secrets**:
   Database password is generated using Terraform's random provider.
@@ -93,7 +95,7 @@ Each log entry includes:
 
 Logs are stored in:
 
-```
+```bash
 /var/log/login_audit.log
 ```
 
@@ -102,6 +104,8 @@ This approach ensures auditing without introducing additional dependencies and w
 ---
 
 ## Deployment Instructions
+
+The deployment is fully automated and requires no manual configuration steps.
 
 ```bash
 terraform init
@@ -121,10 +125,24 @@ gcloud compute ssh wordpress-vm --tunnel-through-iap
 Screenshots included:
 
 * Terraform apply output
+
+![Terraform Apply](docs/screenshots/terraform-apply.png)
+
 * WordPress running in browser
+
+![WordPress](docs/screenshots/wordpress.png)
+
 * IAP-based SSH access
+
+![IAP SSH](docs/screenshots/iap-ssh.png)
+
 * Failed direct SSH attempt
+
+![SSH Failure](docs/screenshots/direct-ssh-fail.png)
+
 * Login audit logs
+
+![Audit Logs](docs/screenshots/audit-logs.png)
 
 ---
 
